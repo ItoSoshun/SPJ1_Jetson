@@ -7,10 +7,8 @@ on:
 permissions:
   contents: read
 tools:
-  # 🔽 エージェントにリポジトリ内のファイルを読み書きさせる必須ツール
-  - name: github-contents
-  # 🔽 エージェントにプルリクエストを自動作成させる必須ツール
-  - name: github-pull-requests
+  - github-contents
+  - github-pull-requests
 safe-outputs:
   create-pull-request:
     draft: false
