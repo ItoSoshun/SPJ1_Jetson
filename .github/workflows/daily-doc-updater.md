@@ -1,11 +1,11 @@
 ---
-engine: github  # 👈 ここを「copilot」から「github」に書き換えます！
+engine: github  # 👈 ここを「copilot」から「github」に変えるのが最大のポイントです！
 on:
   schedule:
     - cron: 'weekly on monday'
   workflow_dispatch:
 permissions:
-  contents: write       # 👈 プルリク作成やファイル読み込みのために両方 write にします
+  contents: write       # 👈 permissions は両方 write にします
   pull-requests: write
 tools:
   - github-contents
