@@ -1,15 +1,15 @@
 ---
-engine: copilot
+engine: github  # 👈 ここを「copilot」から「github」に書き換えます！
 on:
   schedule:
     - cron: 'weekly on monday'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write       # 👈 プルリク作成やファイル読み込みのために両方 write にします
+  pull-requests: write
 tools:
   - github-contents
   - github-pull-requests
-# 🔽 安全装置を「確認なしで即時プルリク作成・送信」に強制変更します
 safe-outputs:
   create-pull-request:
     review: false
