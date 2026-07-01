@@ -5,8 +5,7 @@ on:
     - cron: 'weekly on monday'
   workflow_dispatch:
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 tools:
   cli-proxy: true
 safe-outputs:
